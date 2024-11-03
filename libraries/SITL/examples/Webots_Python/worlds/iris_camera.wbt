@@ -1,4 +1,4 @@
-#VRML_SIM R2023a utf8
+#VRML_SIM R2023b utf8
 
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
@@ -18,11 +18,11 @@ EXTERNPROTO "../protos/ArucoMarker.proto"
 WorldInfo {
   title "Iris Ardupilot"
   basicTimeStep 2
-  FPS 20
+  FPS 120
 }
 Viewpoint {
   orientation 0.10264123808602478 -0.7648124131744727 -0.6360241732028804 5.867275660921915
-  position -2.488925008027789 0.29237831017431365 2.067754838508868
+  position -4.30754154213258 -0.20470752746867654 2.6874956666480543
   follow "Iris"
   followSmoothness 0.01
 }
@@ -84,7 +84,8 @@ Table {
   translation 0 0.92 0
 }
 Iris {
-  translation 0.0702495 1.45039 0.8
+  translation 0.0702495 1.45039 0.7949632125000001
+  rotation 0.6848507679009512 0.7285065937432305 0.01604894320862275 5.588330225563798e-18
   controller "ardupilot_vehicle_controller"
   controllerArgs [
     "--motors"
